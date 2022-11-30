@@ -62,4 +62,39 @@ print(n.rstrip().encode())
 #%% Printing unicode
 for i in range(50):
     print(chr(128522+i), end=' ')
+# %% List join, append and extend
+alist = [1, 2, 3]
+print(alist)
+
+alist = alist + [4]
+print(alist)
+
+alist += [5]  # similar to above
+print(alist)
+
+alist.append(6)
+print(alist)
+
+alist.extend([7, 8])  # similar to join
+print(alist)
+
+alist.append([9, 0])  # append as new item
+print(alist)
+
+print(alist[-1][0])  # select the last element and its first element
+
+# %% Remove non-alphabets from string
+astring = 'Testing 123!'
+print(astring)
+
+alist = list(astring)
+
+blist = []  # empty list
+for i in alist:
+    if i.isalpha():
+        blist.append(i)
+
+bstring = ''.join(blist)
+print(bstring)
+
 # %%
