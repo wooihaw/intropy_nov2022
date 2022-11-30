@@ -1,0 +1,10 @@
+wolf
+whale
+cheetah
+lizard
+tiger
+monkey
+parrot
+gorilla
+dolphin
+snake
