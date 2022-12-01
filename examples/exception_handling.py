@@ -21,14 +21,17 @@ finally:
     pass
 
 # %% Exception Handling (4)
-try:
-	num = int(input('Enter a number: '))
-except:
-	print('Not a number!')
-else:
-	print(f'You have entered {num}')
-finally:
-	print('Bye!')
+while True:
+    try:
+        num = int(input('Enter a number: '))
+    except Exception as e:
+        print('Error: ', e)
+        print('Not a number!')
+    else:
+        print(f'You have entered {num}')
+        break
+    # finally:
+    #     print('Bye!')
 
 # %% Exception Handling (5)
 try:
