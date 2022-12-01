@@ -6,3 +6,14 @@ print(set(alist) & set(blist))
 
 # Alternative
 print(set(alist).intersection(set(blist)))
+
+# Alternative solution using list
+clist = []
+for i in alist:
+    if i in blist:
+        clist.append(i)
+print(clist)
+
+# Alternative solution using list comprehension
+dlist = [i for i in alist if i in blist]
+print(dlist)
