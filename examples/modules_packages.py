@@ -64,17 +64,17 @@ os.startfile("lorem_ipsum.txt")
 # %% Modules and Packages (10)
 import os
 path = os.path.join(os.getcwd(), "lorem_ipsum.txt")
-os.path.exists(path)
+print(os.path.exists(path))
 
 # %% Modules and Packages (11)
 import os
 path = os.path.join(os.getcwd(), "new_folder")
-os.path.isdir(path)
+print(os.path.isdir(path))
 
 #%% Modules and Packages (11)
 import os
 path = os.path.join(os.getcwd(), "lorem_ipsum.txt")
-os.path.isfile(path)
+print(os.path.isfile(path))
 
 # %% Modules and Packages (12)
 import os
