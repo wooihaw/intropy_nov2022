@@ -35,6 +35,7 @@ with open(filename, 'r', encoding='utf-8') as f:
         output = output + f"{k},{max(d[k])}\n"
         
     print(output)
+    
     with open('data/high_scores.csv', 'w') as g:
         g.write(output)
         
